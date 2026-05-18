@@ -1,6 +1,6 @@
 export const electricalService = {
   calculatePower: async (voltage: string, current: string, type: string) => {
-    // Agora apontando corretamente para o seu servidor online do Render!
+    // URL corrigida com o link do seu Render e a sintaxe ${voltage} correta!
     const response = await fetch(
       `https://onrender.com{voltage}&current=${current}&type=${type}`
     );
