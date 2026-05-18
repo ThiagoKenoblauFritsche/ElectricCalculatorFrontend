@@ -1,8 +1,8 @@
 export const electricalService = {
   calculatePower: async (voltage: string, current: string, type: string) => {
-    // LINK CORRETO + PROTEÇÃO COMPLETA DOS PARÂMETROS
+    // LINK DO SEU SERVIDOR + SINTAXE DE INTERPOLAÇÃO CORRETA
     const response = await fetch(
-      `https://onrender.com?voltage=${encodeURIComponent(voltage)}&current=${encodeURIComponent(current)}&type=${encodeURIComponent(type)}`
+      `https://onrender.com{encodeURIComponent(voltage)}&current=${encodeURIComponent(current)}&type=${encodeURIComponent(type)}`
     );
     
     if (!response.ok) {
